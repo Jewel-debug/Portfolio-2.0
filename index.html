@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/0f07b75011.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <a href="#" class="logo">Jewel<span class="span">-debug..</span></a>
+                <ul id="sidemenu">
+                    <li>
+                       <a href="#home">Home</a> 
+                    </li>
+                    <li>
+                        <a href="#about">About</a>
+                    </li>
+                    <li>
+                        <a href="#services">Services</a>
+                    </li>
+                    <li>
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li>
+                        <a href="#contact">Contact</a>
+                    </li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+
+            </nav>
+            
+            <div class="header-text">
+                <p>Full-Stack Web Developer</p>
+                <h1>Hi, I'm <span>Jewel-Debug</span> <br>From Nigeria </h1>
+            </div>
+        </div>
+    </div>
+<!-- about section -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm a Full-Stack Web DevOp, Feel free to explore my portfolio, and lets connect to discuss projects,collaboration, or just share ideas!</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Front-End</span><br>Designing Web/App interfaces using React</li>
+                            <li><span>Back-End</span><br>Designing Web/App backend using Django/Javscript</li>
+                            <li><span>Full-Stack Web Dev</span><br>Building Web Pages with the knowledge of both Front-end/Back-end</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>Built</span><br>Frontend projects under flip-to-tech</li>
+                            <li><span>Built</span><br>Backend projects under flip-to-tech</li>
+                            <li><span>But</span><br>Currently do not have any work experience</li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="education">
+                            <ul>
+                            <li><span>Front-End</span><br>Learnt frontend(Framework "React") from a tech school named flip-to-tech <br> who partnered with wema bank</li>
+                            <li><span>Back-End</span><br>Learnt backend(Framework "Django") from a tech school named flip-to-tech <br> who partnered with wema bank</li>
+                            <li><span>Full-Stack Web Dev</span><br>Learnt Full-Stack Web dev from flip-to-tech</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- services -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Front-End Web Developer</h2>
+                    <p>Web Application using front-end framework.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Back-End Web Developer</h2>
+                    <p>Web Application using back-end framework.</p>
+                    <a href="#">Learn More</a>
+                </div>
+
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Full-Stack Web Developer</h2>
+                    <p>Offering knowledge for both frontend and backend using framework correlated to it.</p>
+                    <a href="#">Learn More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<!-- portfolio -->
+
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+
+            <div class="work-list">
+
+                <div class="work">
+                    <img src="images/work-1.png">
+
+                    <div class="layer">
+                        <h3>Expense Tracker</h3>
+                        <p>This app helps you to track expenses.</p>
+                        <a href="https://jewel-debug.github.io/Expense-Tracker/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-2.png">
+
+                    <div class="layer">
+                        <h3>Recipe Finder</h3>
+                        <p>This app helps you find different meal recipes from all over the world.</p>
+                        <a href="https://jewel-debug.github.io/Recipe-finder/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="images/work-3.png">
+
+                    <div class="layer">
+                        <h3>Password Generator</h3>
+                        <p>This app helps you to generate strong suitable passwords.</p>
+                        <a href="https://jewel-debug.github.io/Password-Generator/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+
+        <div class="container">
+
+            <div class="row">
+
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>rowlandjewel880@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>+23456789</p>
+
+                    <div class="social-icons">
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <a href=""><i class="fab fa-twitter-sqaure"></i></a>
+                        <a href=""><i class="fab fa-instagram"></i></a>
+                        <a href=""><i class="fab fa-linkedin"></i></a>
+                    </div>
+
+                    <a href="" class="btn btn2">Download CV</a>
+
+                </div>
+
+                <div class="contact-right">
+
+                    <form action="">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="copyright">
+            <p>Copyright ©️Jewel-Debug Made with <i class="fa-solid fa-heart"></i> </p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0"
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px"
+        }
+    </script>
+</body>
+</html>
